@@ -1,0 +1,117 @@
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: #1a1a1a;
+}
+
+.carousel-container {
+    width: 100%;
+    padding: 2rem;
+}
+
+.carousel {
+    display: flex;
+    width: 100%;
+    gap: 1rem;
+}
+
+.carousel-item {
+    position: relative;
+    height: 500px;
+    flex: 1;
+    overflow: hidden;
+    border-radius: 1rem;
+    transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+}
+
+/* État par défaut */
+.carousel-item {
+    flex: 1;
+}
+
+/* État au hover */
+.carousel-item:hover {
+    flex: 1.5;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+}
+
+.carousel-item:hover img {
+    transform: scale(1.01);
+    transition: transform 0.6s ease;
+}
+
+.overlay1 {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    padding: 2rem;
+    color: white;
+    opacity: 1;
+    transform: translateY(20px);
+    transition: all 0.4s ease;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 2rem;
+    color: white;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.4s ease;
+}
+
+.carousel-item:hover .overlay {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.overlay h2 {
+    font-size: 1.5rem;
+    margin: 0 0 0.5rem 0;
+}
+
+.description {
+    font-size: 0.9rem;
+    margin: 0;
+    opacity: 0.8;
+    max-width: 80%;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+/* Animation pour le texte */
+.carousel-item:hover .description {
+    opacity: 1;
+}
+
+/* Effet de transition plus fluide pour les items non survolés */
+.carousel-item:not(:hover) {
+    flex: 0.5;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .carousel {
+        flex-direction: column;
+    }
+    
+    .carousel-item {
+        height: 300px;
+    }
+}

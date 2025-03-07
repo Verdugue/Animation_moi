@@ -1,0 +1,137 @@
+/* Cacher/Montrer les versions selon la taille d'écran */
+.mobile-version {
+    display: none;
+}
+
+.desktop-version {
+    display: block;
+}
+
+/* Styles Desktop */
+.desktop-header {
+    height: 80px;
+    background: transparent;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+.desktop-nav {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    height: 100%;
+}
+
+.nav-links {
+    display: flex;
+    gap: 40px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+/* Hero Section */
+.hero-section {
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+                url('path/to/hero-bg.jpg');
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Cards Section */
+.stack-cards-section {
+    padding: 100px 0;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.card {
+    height: 500px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+/* Carousel Section */
+.agencies-section {
+    padding: 100px 0;
+    background: #f5f5f5;
+}
+
+.carousel {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.carousel-card {
+    width: 400px;
+    height: 300px;
+}
+
+/* Background Section */
+.estimation-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+
+.background {
+    width: 600px;
+    height: 800px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .desktop-version {
+        display: none;
+    }
+    .mobile-version {
+        display: block;
+    }
+}
+
+/* Animations spécifiques Desktop */
+.floating-orb {
+    width: 800px;
+    height: 800px;
+}
+
+.circular-text svg {
+    width: 300px;
+    height: 300px;
+}
+
+/* Adaptations des composants existants */
+.card__content {
+    padding: 60px;
+}
+
+.carousel-track {
+    gap: 40px;
+}
+
+/* Styles pour grands écrans */
+@media (min-width: 1600px) {
+    .desktop-nav {
+        max-width: 1600px;
+    }
+
+    .stack-cards-section,
+    .carousel,
+    .estimation-section {
+        max-width: 1600px;
+    }
+} 
