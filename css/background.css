@@ -1,0 +1,85 @@
+.background {
+    background: #062B3E;
+    background-size: 180% 180%;
+    animation: gradient-animation 9s ease infinite;
+    height: 781px;
+    width: 359px;
+    border-radius: 30px;
+    position: relative;
+    overflow: hidden;
+    margin-top: 50px;
+    margin-left: 16px;
+}
+/* Animation du gradient de fond */
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Boule flottante */
+.floating-orb {
+    position: absolute;
+    width: 508px;
+    height: 400px;
+    background: #044464;
+    border-radius: 50%;
+    left: 90%;
+    filter: brightness(1.5) blur(100px);
+    transform: translateX(-100%);
+    animation: float 10s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% {
+        top: 100%;
+        opacity: 1;
+    }
+    50% {
+        top: 0%;
+        opacity: 2;
+    }
+    100% {
+        top: 100%;
+        opacity: 1;
+    }
+}
+
+/* Texte circulaire */
+.circular-text {
+    position: absolute;
+    top: 59%;
+    left: 56%;
+    transform: translate(-50%, -50%);
+    animation: rotate 8s linear infinite;
+}
+
+.circular-text svg {
+    fill: white;
+    font-size: 9.2px;
+    letter-spacing: 2px;
+}
+
+@keyframes rotate {
+    from {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    to {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+/* Style du chemin de texte */
+.circular-text path {
+    fill: none;
+}
+
+.circular-text text {
+    fill: rgb(255, 255, 255);
+}

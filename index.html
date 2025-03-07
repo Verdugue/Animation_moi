@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations Showcase</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Nunito', sans-serif;
+            background: #1a1a1a;
+            color: white;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        .animations-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .animation-card {
+            background: #333;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .animation-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .preview {
+            height: 200px;
+            background: #444;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+        }
+
+        .card-content {
+            padding: 20px;
+        }
+
+        h2 {
+            margin-bottom: 10px;
+            color: #0073ba;
+        }
+
+        p {
+            margin-bottom: 20px;
+            opacity: 0.8;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #0073ba;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+
+        .btn:hover {
+            background: #005a94;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Animations </h1>
+        <div class="animations-grid">
+            <div class="animation-card">
+                <div class="card-content">
+                    <h2>Menu Burger</h2>
+                    <p>Menu burger animé avec transition fluide et navigation responsive.</p>
+                    <a href="pages/burger-menu.html" class="btn">Voir la démo</a>
+                </div>
+            </div>
+
+            <div class="animation-card">
+                <div class="card-content">
+                    <h2>Boutons Toggle</h2>
+                    <p>Boutons toggle interactifs avec animation du background.</p>
+                    <a href="pages/toggle-buttons.html" class="btn">Voir la démo</a>
+                </div>
+            </div>
+
+            <div class="animation-card">
+                <div class="card-content">
+                    <h2>Défilement de Texte</h2>
+                    <p>Défilement infini et fluide de texte.</p>
+                    <a href="pages/text-scroll.html" class="btn">Voir la démo</a>
+                </div>
+            </div>
+
+            <div class="animation-card">
+                <div class="card-content">
+                    <h2>Cartes Empilées</h2>
+                    <p>Animation de cartes avec effet d'empilement au scroll.</p>
+                    <a href="pages/stack-cards.html" class="btn">Voir la démo</a>
+                </div>
+            </div>
+
+            <div class="animation-card">
+                <div class="card-content">
+                    <h2>Carrousel</h2>
+                    <p>Carrousel interactif avec effet de zoom sur la carte active.</p>
+                    <a href="pages/carousel.html" class="btn">Voir la démo</a>
+                </div>
+            </div>
+            <div class="animation-card">
+                <div class="card-content">
+                    <h2>Carrousel agences</h2>
+                    <p>Carrousel pour les agences</p>
+                    <a href="pages/agency-carousel.html" class="btn">Voir la démo</a>
+                </div>
+            </div>
+            <div class="animation-card">
+                <div class="card-content">
+                    <h2>Background</h2>
+                    <p>Background</p>
+                    <a href="pages/background.html" class="btn">Voir la démo</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

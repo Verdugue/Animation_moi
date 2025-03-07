@@ -1,0 +1,30 @@
+/* Styles du défilement de texte */
+.defilement {
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    padding: 5px 0;
+}
+
+.defilement-track {
+    display: flex;
+    white-space: nowrap;
+    animation: scroll 20s linear infinite;
+}
+
+.defilement-track span {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.5rem;
+    color: #ffffff;
+    padding: 0 50px;
+    flex-shrink: 0;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}

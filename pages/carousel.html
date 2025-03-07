@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrousel - Démo</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/carousel.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+</head>
+<body>
+    <a href="../index.html" class="back-btn">← Retour</a>
+
+    <section class="agencies-carousel">
+        <h2 class="section-title">NOS AGENCES</h2>
+        <div class="gallery js-flickity" data-flickity-options='{
+            "wrapAround": true,
+            "cellAlign": "center",
+            "contain": true,
+            "selectedAttraction": 0.2,
+            "friction": 0.8,
+            "percentPosition": false
+        }'>
+            <div class="gallery-cell">
+                <div class="agency-card">
+                    <img src="https://picsum.photos/300/250" alt="Agence 1">
+                    <div class="agency-info">
+                        <h3>Agence Paris</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-cell">
+                <div class="agency-card">
+                    <img src="https://picsum.photos/300/250" alt="Agence 1">
+                    <div class="agency-info">
+                        <h3>Agence Paris</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-cell">
+                <div class="agency-card">
+                    <img src="https://picsum.photos/300/250" alt="Agence 1">
+                    <div class="agency-info">
+                        <h3>Agence Paris</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-cell">
+                <div class="agency-card">
+                    <img src="https://picsum.photos/300/250" alt="Agence 1">
+                    <div class="agency-info">
+                        <h3>Agence Paris</h3>
+                    </div>
+                </div>
+            </div>
+            <!-- Répéter pour les autres agences -->
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="../js/carousel.js"></script>
+</body>
+</html>
