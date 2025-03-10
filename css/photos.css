@@ -57,8 +57,8 @@ body {
     background-color: black;
     border-radius: 20px;
     margin-top: 100px;
-    transform: translate(100%, 50%) rotate(180deg) scale(0.1);
-    filter: blur(10px) hue-rotate(90deg);
+    transform: translate(100%, 50%)  scale(0.1);
+    filter: blur(10px) ;
 }
 
 .cube {
@@ -69,13 +69,13 @@ body {
 }
 
 .cube:nth-child(1) {
-    transform: translate(50%, -200%) rotate(45deg) scale(0.2);
+    transform: translate(50%, -200%)  scale(0.2);
     filter: brightness(0);
     transition-delay: 0.2s;
 }
 
 .cube:nth-child(2) {
-    transform: translate(-50%, 200%) rotate(-45deg) scale(0.2);
+    transform: translate(-50%, 200%)  scale(0.2);
     filter: brightness(0);
     transition-delay: 0.4s;
 }
@@ -107,16 +107,7 @@ body {
     filter: blur(5px);
 }
 
-/* Animation 2: Apparition avec zoom et rotation pour les cubes */
-.cube:nth-child(1) {
-    transform: translateX(100%) scale(0.5) rotate(-15deg);
-    transition-delay: 0.2s;
-}
 
-.cube:nth-child(2) {
-    transform: translateX(100%) scale(0.5) rotate(15deg);
-    transition-delay: 0.4s;
-}
 
 
 
@@ -139,18 +130,7 @@ body {
     filter: blur(0) hue-rotate(0);
 }
 
-/* Animation pour les cubes avec effet cascade */
-.cube:nth-child(1) {
-    transform: translate(50%, -200%) rotate(45deg) scale(0.2);
-    filter: brightness(0);
-    transition-delay: 0.2s;
-}
 
-.cube:nth-child(2) {
-    transform: translate(-50%, 200%) rotate(-45deg) scale(0.2);
-    filter: brightness(0);
-    transition-delay: 0.4s;
-}
 
 /* Animation du conteneur */
 .img-container-2, .img-container-3 {

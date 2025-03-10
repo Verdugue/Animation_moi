@@ -9,7 +9,7 @@ const observer = new IntersectionObserver((entries) => {
         }
     });
 }, {
-    threshold: 0.1 // L'animation se déclenche quand 10% de l'élément est visible
+    threshold: 0.1 
 });
 
 // Observer toutes les images
