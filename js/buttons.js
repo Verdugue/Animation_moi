@@ -15,20 +15,4 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
-
-    buttonContainer.addEventListener('mousemove', (e) => {
-        const rect = buttonContainer.getBoundingClientRect();
-        const x = e.clientX - rect.left;
-        const buttonWidth = rect.width / 2;
-        
-        if (x > buttonWidth) {
-            background.style.transform = 'translateX(100%)';
-            buttons[1].classList.add('active');
-            buttons[0].classList.remove('active');
-        } else {
-            background.style.transform = 'translateX(0)';
-            buttons[0].classList.add('active');
-            buttons[1].classList.remove('active');
-        }
-    });
 });
