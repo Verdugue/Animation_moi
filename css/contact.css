@@ -1,0 +1,117 @@
+@keyframes move {
+    100% {
+        transform: translate3d(0, 0, 1px) rotate(360deg);
+    }
+}
+
+.background {
+    position: relative;
+    min-height: 37vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #002B49;
+    overflow: hidden;
+    border-radius: 43px;
+    width: 173vh;
+    gap: 191px;
+    
+}
+
+.background span {
+    width: 17vmin;
+    height: 17vmin;
+    border-radius: 17vmin;
+    backface-visibility: hidden;
+    position: absolute;
+    animation: move;
+    animation-duration: 46;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+
+.background span:nth-child(0) {
+    color: #ffffff;
+    top: 51%;
+    left: 35%;
+    animation-duration: 15s;
+    animation-delay: -26s;
+    transform-origin: 21vw -3vh;
+    box-shadow: -34vmin 0 5.203922799100326vmin currentColor;
+}
+.background span:nth-child(1) {
+    color: #ffffff;
+    top: 46%;
+    left: 59%;
+    animation-duration: 34s;
+    animation-delay: -6s;
+    transform-origin: -4vw 19vh;
+    box-shadow: -34vmin 0 4.750196841365268vmin currentColor;
+}
+.background span:nth-child(2) {
+    color: #ffffff;
+    top: 15%;
+    left: 55%;
+    animation-duration: 19s;
+    animation-delay: -14s;
+    transform-origin: -11vw 17vh;
+    box-shadow: 34vmin 0 4.5494096094585vmin currentColor;
+}
+.background span:nth-child(3) {
+    color: #ffffff;
+    top: 91%;
+    left: 76%;
+    animation-duration: 27s;
+    animation-delay: -5s;
+    transform-origin: -22vw -18vh;
+    box-shadow: -34vmin 0 4.882352656594664vmin currentColor;
+}
+.background span:nth-child(4) {
+    color: #ffffff;
+    top: 80%;
+    left: 18%;
+    animation-duration: 15s;
+    animation-delay: -11s;
+    transform-origin: 12vw 11vh;
+    box-shadow: -34vmin 0 4.90625889919918vmin currentColor;
+}
+
+.content {
+    max-width: 800px;
+    text-align: left;
+    padding: 0 20px;
+    color: white;
+    z-index: 1;
+}
+
+h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+p {
+    font-size: 12px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    max-width: 450px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: white;
+    color: #002B49;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+
+.cta-button:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;    
+    box-shadow: 0px 10px 0px 0px rgba(0, 0, 0, 0.5);
+}
